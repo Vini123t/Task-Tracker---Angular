@@ -1,0 +1,70 @@
+/* Reset e estilo global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Estilo do Header */
+.app-header {
+  background-color: #516EFF; /* Cor preferida */
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.app-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app-icon {
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.app-icon:hover {
+  transform: rotate(10deg) scale(1.1); /* Pequena animação ao passar o mouse */
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.tagline {
+  font-size: 1rem;
+  color: #d1d1ff; /* Cor complementar mais suave */
+  margin-top: 5px;
+}
+
+/* Estilo principal do conteúdo */
+main {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo da lista de tarefas */
+.task-list {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0,
