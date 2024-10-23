@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "TaskeTracker": {
+    "first-app-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/taske-tracker",
+            "outputPath": "dist/first-app-angular",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -21,7 +21,7 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/public/assets",
+              "src/assets",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "TaskeTracker:build:production"
+              "buildTarget": "first-app-angular:build:production"
             },
             "development": {
-              "buildTarget": "TaskeTracker:build:development"
+              "buildTarget": "first-app-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -95,6 +95,6 @@
     }
   },
   "cli": {
-    "analytics": "4e4b8f2e-0f3e-4b56-b08c-3300102089f1"
+    "analytics": false
   }
 }
