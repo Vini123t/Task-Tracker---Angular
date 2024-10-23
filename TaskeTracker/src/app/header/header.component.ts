@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   imageUrl: string = 'assets/list.png';
+
 }
