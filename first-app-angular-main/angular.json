@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "first-app-angular": {
+    "first-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/first-app-angular",
+            "outputPath": "dist/first-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "first-app-angular:build:production"
+              "buildTarget": "first-app:build:production"
             },
             "development": {
-              "buildTarget": "first-app-angular:build:development"
+              "buildTarget": "first-app:build:development"
             }
           },
           "defaultConfiguration": "development"
